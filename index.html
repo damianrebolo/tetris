@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/tetris.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+  </head>
+  <body>
+    <h1 class="title">Tetris</h1>
+    <div class="tetris">
+      <div class="board">
+        <div class="board-info">
+          <div id="level"></div>
+          <div id="score"></div>
+        </div>
+        <canvas id="board-canvas"></canvas>
+      </div>
+      <div class="info">
+        <button id="start-button">Start</button>
+        <canvas id="piece-canvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

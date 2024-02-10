@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "press";
+  src: url("/PressStart2P-Regular.ttf") format("truetype");
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "press";
+
+  color-scheme: dark light;
+  color: white;
+  background-color: #151220;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1.title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  background-clip: text;
+  background-image: linear-gradient(to right, #be123c, #7dd3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.tetris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 630px;
+  width: 560px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 280px;
+}
+
+.board-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 2px;
+  background: -webkit-linear-gradient(#918383, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 100%;
+  position: relative;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  background-clip: text;
+  background-image: linear-gradient(to right, #be123c, #7dd3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+button:hover {
+  background-image: linear-gradient(to right, #7dd3fc, #be123c);
+}
+
+#piece-canvas {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+}
